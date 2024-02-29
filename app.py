@@ -78,7 +78,7 @@ def main():
                 data = pd.read_csv(uploaded_file, sep='\t')
     else:
         dataset_name = st.sidebar.selectbox("Select a dataset", ["titanic", "tips", "iris", "dots", "anscombe", "attention", "brain_networks", "car_crashes", "exercise", "flights", "fmri", "mpg", "planets", ])
-        # data = sns.load_dataset(dataset_name)
+        data = sns.load_dataset(dataset_name)
 
     if not data.empty:
         st.write("Data Head:", data.head())
