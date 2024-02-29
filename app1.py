@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import seaborn as sns
 
 # Adding title of your app
 st.title('My First Testing App for Codanics course (6 months long)')
