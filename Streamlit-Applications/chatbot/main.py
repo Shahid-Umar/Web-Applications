@@ -45,7 +45,7 @@ st.sidebar.subheader("Credit to : Dr. Ammar Tufail\nCEO of [Codanics.com](https:
 st.sidebar.video("https://youtu.be/omk5b1m2h38")
 st.sidebar.markdown("---")
 # add social contact info
-st.sidebar.markdown("Created by: [Shahid Umar](mailto:aammar@codanics.com)")
+st.sidebar.markdown("Created by: [Shahid Umar](mailto:shahidcontacts@gmail.com)")
 st.sidebar.markdown("[![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=for-the-badge&logo=github)](https://github.com/Shahid-Umar)&emsp;")
 st.sidebar.markdown("[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/shahidumar80)&emsp;")
 st.sidebar.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-green?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shahidumar/)&emsp;")
