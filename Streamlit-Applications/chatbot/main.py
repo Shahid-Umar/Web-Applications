@@ -23,8 +23,8 @@ st.set_page_config(page_title="🔗 Interactive GPT-Based ChatBot", page_icon=":
 st.title('🔗 Interactive GPT-Based ChatBot')
 # Setting up OpenAI API key
 openai_api_key = st.secrets['OPENAI_API_KEY'] # This takes the API key from the secrets.toml file
-#openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password') # Prompt to user for API key
-#openai_api_key = "Enter your GPT API key here"
+#openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password') # Prompt to user to enter API key
+#openai_api_key = "Enter your own GPT API key here"
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
