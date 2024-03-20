@@ -19,24 +19,12 @@ Overall, Langchain empowers developers to construct LLM-powered applications wit
 import streamlit as st
 from langchain.llms import OpenAI
 
-# set the backgroug image, image get from other folder
-st.markdown(
-  f"""
-  <style>
-    .css-1v0psqq {{
-      background-image: url("chatbot_bg.png");
-      background-size: cover;
-    }}
-  </style>
-  """, unsafe_allow_html=True
-) 
-
+st.set_page_config(page_title="🔗 Interactive GPT-Based ChatBot", page_icon=":robot:")
 st.title('🔗 Interactive GPT-Based ChatBot')
 # Setting up OpenAI API key
 openai_api_key = st.secrets['OPENAI_API_KEY'] # This takes the API key from the secrets.toml file
-# openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password') # Prompt to user for API key
-# openai_api_key = "Enter your OpenAI API key"
-
+#openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password') # Prompt to user for API key
+#openai_api_key = "Enter your GPT API key here"
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
@@ -49,3 +37,17 @@ with st.form('my_form'):
     st.warning('WARNING! Please enter your OpenAI API key that starts with "sk-"!', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'):
     generate_response(text)
+
+# Side bar content
+st.sidebar.markdown("---")
+st.sidebar.subheader("Credit to : Dr. Ammar Tufail\nCEO of [Codanics.com](https://codanics.com)")
+# add a youtube video
+st.sidebar.video("https://youtu.be/omk5b1m2h38")
+st.sidebar.markdown("---")
+# add social contact info
+st.sidebar.markdown("Created by: [Shahid Umar](mailto:aammar@codanics.com)")
+st.sidebar.markdown("[![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=for-the-badge&logo=github)](https://github.com/Shahid-Umar)&emsp;")
+st.sidebar.markdown("[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/shahidumar80)&emsp;")
+st.sidebar.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-green?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shahidumar/)&emsp;")
+st.sidebar.markdown("[![Facebook](https://img.shields.io/badge/Facebook-Profile-pink?style=for-the-badge&logo=facebook)](https://www.facebook.com/shahidumar80)&emsp;")
+st.sidebar.markdown("[![Twitter](https://img.shields.io/badge/Twitter-Profile-brown?style=for-the-badge&logo=twitter)](https://twitter.com/shahidumar80/)")
