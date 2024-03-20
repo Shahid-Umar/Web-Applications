@@ -24,7 +24,7 @@ st.markdown(
   f"""
   <style>
     .css-1v0psqq {{
-      background-image: url("chatbot_bg.jpg");
+      background-image: url("chatbot_bg.png");
       background-size: cover;
     }}
   </style>
