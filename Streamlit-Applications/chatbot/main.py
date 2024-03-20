@@ -19,6 +19,18 @@ Overall, Langchain empowers developers to construct LLM-powered applications wit
 import streamlit as st
 from langchain.llms import OpenAI
 
+# set the backgroug image, image get from other folder
+st.markdown(
+  f"""
+  <style>
+    .css-1v0psqq {{
+      background-image: url("chatbot_bg.jpg");
+      background-size: cover;
+    }}
+  </style>
+  """, unsafe_allow_html=True
+) 
+
 st.title('🔗 Interactive GPT-Based ChatBot')
 # Setting up OpenAI API key
 openai_api_key = st.secrets['OPENAI_API_KEY'] # This takes the API key from the secrets.toml file
